@@ -12,10 +12,9 @@ langchain
 scikit-learn
 pandas
 pypdf
-torch==2.2.2
-transformers==4.36.2
-tokenizers==0.18.1
+torch
+transformers
+tokenizers
 gunicorn>=20.1.0
 google-generativeai
-sentence-transformers==2.2.2
-huggingface_hub==0.20.3
+sentence-transformers
