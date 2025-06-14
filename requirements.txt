@@ -1,4 +1,3 @@
-setuptools
 flask
 flask-cors
 pdfplumber
