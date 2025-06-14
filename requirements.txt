@@ -12,8 +12,9 @@ langchain
 scikit-learn
 pandas
 pypdf
-sentence-transformers
 torch
 transformers
 gunicorn>=20.1.0
 google.generativeai
+sentence-transformers==2.2.2
+huggingface_hub==0.20.3
