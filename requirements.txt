@@ -19,4 +19,3 @@ tokenizers==0.15.2
 gunicorn==21.2.0
 google-generativeai 
 sentence-transformers
-huggingface_hub==0.22.2
