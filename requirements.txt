@@ -16,7 +16,7 @@ pypdf
 torch
 transformers
 tokenizers
-gunicorn
+gunicorn==21.2.0
 google-generativeai 
 sentence-transformers
 huggingface_hub
