@@ -1,3 +1,4 @@
+setuptools
 flask
 flask-cors
 pdfplumber
@@ -16,6 +17,6 @@ torch
 transformers
 tokenizers
 gunicorn
-google.generativeai
+google-generativeai 
 sentence-transformers
 huggingface_hub
