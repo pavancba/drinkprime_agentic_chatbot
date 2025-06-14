@@ -16,3 +16,4 @@ sentence-transformers
 torch
 transformers
 gunicorn
+google.generativeai
