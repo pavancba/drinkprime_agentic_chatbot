@@ -15,5 +15,5 @@ pypdf
 sentence-transformers
 torch
 transformers
-gunicorn
+gunicorn>=20.1.0
 google.generativeai
