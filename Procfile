@@ -1,0 +1,1 @@
+web: gunicorn DrinkPrime_Agentic_chatbot:app
