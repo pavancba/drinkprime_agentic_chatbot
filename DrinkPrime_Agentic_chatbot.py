@@ -57,14 +57,14 @@ def extract_text_from_pdf(pdf_path):
                     text += "\n".join([" | ".join(row) for row in table if row]) + "\n"
 
             #  Extract Text from Images
-            for img in page.images:
-                image_data = page.to_image()
-                image = image_data.original
-                image_array = np.array(image)
-                image_gray = cv2.cvtColor(image_array, cv2.COLOR_BGR2GRAY)
-                extracted_text = pytesseract.image_to_string(Image.fromarray(image_gray))
-                if extracted_text:
-                    text += "\n[Image Text Extracted]: " + extracted_text + "\n"
+            #for img in page.images:
+            #    image_data = page.to_image()
+            #    image = image_data.original
+            #    image_array = np.array(image)
+            #    image_gray = cv2.cvtColor(image_array, cv2.COLOR_BGR2GRAY)
+            #    extracted_text = pytesseract.image_to_string(Image.fromarray(image_gray))
+             #   if extracted_text:
+              #      text += "\n[Image Text Extracted]: " + extracted_text + "\n"
 
     return text.strip()
 def add_document_with_check(document_text, doc_id, metadata=None):
