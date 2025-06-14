@@ -15,7 +15,8 @@ pandas
 pypdf
 torch
 transformers==4.41.2
-tokenizers==0.15.2
+tokenizers==0.19.1
+huggingface_hub==0.33.0
 gunicorn==21.2.0
-google-generativeai 
+google-generativeai
 sentence-transformers
