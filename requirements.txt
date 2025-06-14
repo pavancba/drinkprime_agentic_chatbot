@@ -1,0 +1,17 @@
+flask
+flask-cors
+pdfplumber
+pytesseract
+opencv-python-headless
+numpy
+pillow
+chromadb
+rank_bm25
+google-cloud-aiplatform
+langchain
+scikit-learn
+pandas
+pypdf
+sentence-transformers
+torch
+transformers
