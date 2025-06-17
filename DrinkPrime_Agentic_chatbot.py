@@ -30,6 +30,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 PDF_FOLDER = os.environ.get("PDF_FOLDER", "./Sample_datasets")
 VECTOR_DB_PATH = os.environ.get("VECTOR_DB_PATH", "./chroma_db")
+print("PDF_FOLDER set to:", PDF_FOLDER)
+print("VECTOR_DB_PATH set to:", VECTOR_DB_PATH)
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -135,7 +137,7 @@ def rag_query():
         from sentence_transformers import SentenceTransformer
         chroma_client = chromadb.PersistentClient(path=VECTOR_DB_PATH)
         collection = chroma_client.get_or_create_collection(name="documents")
-        embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        embedding_model = SentenceTransformer("./all-MiniLM-L6-v2-local")
         docs = process_pdfs()
         docs_loaded = True
         print(f"✅ Loaded {len(docs)} chunks")
