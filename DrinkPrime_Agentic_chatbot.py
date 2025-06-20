@@ -99,7 +99,7 @@ def generate_response(query, retrieved_docs, chat_history=[]):
 
     greetings = ["hi", "hello", "hey", "good morning", "good evening", "good afternoon"]
     if query.lower().strip() in greetings:
-        return "Hello! 👋 How can I assist you today?"
+        return "Hello! How can I assist you today?"
 
     formatted_history = ""
     if chat_history:
@@ -111,16 +111,16 @@ def generate_response(query, retrieved_docs, chat_history=[]):
     You are a friendly, empathetic customer support agent for DrinkPrime.
     Provide helpful responses with clarity and emojis when relevant.
 
-    📘 Knowledge Context:
+    Knowledge Context:
     {context}
 
-    💬 Conversation History:
+    Conversation History:
     {formatted_history}
 
-    🧑‍💻 Latest User Question:
+    Latest User Question:
     {query}
 
-    🤖 Your helpful and engaging answer:
+    Your helpful and engaging answer:
     """
 
     model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
