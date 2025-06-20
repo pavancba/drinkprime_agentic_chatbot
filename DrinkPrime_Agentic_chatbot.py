@@ -99,7 +99,7 @@ def generate_response(query, retrieved_docs, chat_history=[]):
 
     greetings = ["hi", "hello", "hey", "good morning", "good evening", "good afternoon"]
     if query.lower().strip() in greetings:
-        return "Hello! How can I assist you today?"
+        return "Hello! 👋 How can I assist you today?"
 
     formatted_history = ""
     if chat_history:
@@ -109,7 +109,7 @@ def generate_response(query, retrieved_docs, chat_history=[]):
 
     prompt = f"""
     You are a friendly, empathetic customer support agent for DrinkPrime.
-    Provide helpful responses with clarity and emojis when relevant.
+    Provide helpful responses with clarity. Do NOT use any emojis or emoticons.
 
     Knowledge Context:
     {context}
